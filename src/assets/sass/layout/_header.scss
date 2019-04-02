@@ -1,0 +1,45 @@
+.header {
+    @include clearfix;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: $color-white;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.5);
+    //padding: 2rem;
+    transition: all .5s;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__part{
+        display: inline-block;
+        float: left;
+    }
+
+    &__logo {
+        height: 6rem;
+        display: block;
+        transition: all .5s;
+    }
+
+    &__logo-box {
+        padding: 2.3rem;
+    }
+
+    &__action-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    &__left {
+        float: left;
+    }
+
+    &__right {
+        float: right;
+    }
+
+}
